@@ -1,0 +1,13 @@
+$(function(){
+    $('#main-img').hide().fadeIn(3000);
+    $('#main-me').click(function(){
+        if($('#main-me').hasClass('exist')){
+            $('#main-me').removeClass('exist');
+            $('.main-list').show().slideUp('slow');
+        }
+        else{
+            $('#main-me').addClass('exist');  
+            $('.main-list').slideDown('slow').show();
+        }
+    });
+});
